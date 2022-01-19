@@ -314,14 +314,15 @@
   border-radius: 25.5px;
   z-index: 4;
 }
-
-.button {
+.button-group{
   position: absolute;
   width: 49%;
   /*height: 22.66%;*/
   height: auto;
   left: 25.6%;
   top: 45.935%;
+}
+.button {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -357,16 +358,20 @@
 }
 
 .button-disable {
-  position: absolute;
-  width: 49%;
+  /*width: 49%;*/
   /*height: 22.66%;*/
-  left: 25.6%;
-  top: 45.935%;
+  /*left: 25.6%;*/
+  /*top: 45.935%;*/
+  width: 100%;
   padding: 0;
   border: none;
   background-color: transparent;
   text-align: center;
   z-index: 5;
+}
+.button-disable.button-animation{
+  position: absolute;
+  left: 0;
 }
 
 .button-animation {
@@ -602,4 +607,17 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.button-description{
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
+  font-family: 'FS Magistral';
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  min-width: 220px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
