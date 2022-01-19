@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lì Xì Đầu Năm VHT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://vietteltelecom.vn/images/favicon.png">
+    <script type='application/javascript'>
+        document.addEventListener("touchstart", function () { }, false);
+    </script>
+</head>
+
+<body id="myPage">
+<div class="container-fluid animate">
+    <div class="row" style="height: 100vh;justify-content: center;">
+        <div class="col-xl-3 col-12 hidden-video" id="home" style="text-align: center;padding: 0;">
+            <img class="bg-img-home" src="assets/BG - 1.png" alt="">
+            <img class="logo-home" src="assets/logo.png">
+            <img class="title-home" src="assets/Frame@4x 1.png">
+            <div class="boxshadow-title-home"></div>
+            <input type="text" name="employeeCode" maxlength="15" class="title-input-home"
+                   placeholder="Nhập mã nhân viên">
+            <div class="error-text-home hidden-video">
+                <p class="hidden-video">Lỗi hệ thống</p>
+                <p class="hidden-video">Mã nhân viên không đúng</p>
+                <p class="hidden-video">Đã hết thời gian nhận lì xì</p>
+                <p class="hidden-video">Chưa đến thời gian nhận lì xì</p>
+            </div>
+            <button class="button-home bubbly-button-home" id="button-confirm">
+                <div class="button-layout-1-home">
+                    <span class="button-title-home">Xác nhận</span>
+                </div>
+                <div class="button-layout-2-home"></div>
+                <div class="button-layout-3-home"></div>
+            </button>
+            <div class="boxshadow-button-home"></div>
+        </div>
+        <div class="col-xl-3 col-12" id="spin" style="text-align: center;padding: 0; background-color: #AA0707;">
+            <div id="spinReward">
+                <img class="bg-img" src="assets/BG - 2.png" alt="">
+                <img class="logo" src="assets/logo.png">
+
+                <div class="spin-player">
+                    <div class="spin-player-in">
+                        <img class="title-spin" src="assets/Frame@4x 1.png">
+                        <div class="boxshadow-title"></div>
+                    </div>
+                </div>
+
+                <video class="title-text" #video id="myVideo" loop playsinline webkit-playsinline>
+                    <source src="http://34.149.251.71/assets/Number_TONG-HOP_-Final.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img class="firework" id="firework1" style="top: 44%;left: 73%;transform-origin: center center"
+                     src="assets/firework2.png">
+
+                <img class="firework" id="firework2" style="top: 57%;left: 75%;transform-origin: center bottom;"
+                     src="assets/firework1.png">
+
+                <img class="firework" id="firework3" style="top: 57%;left: 7%;transform-origin: center bottom;"
+                     src="assets/firework4.png">
+
+                <img class="firework" id="firework4" style="top: 45%;left: 8%;transform-origin: center center;"
+                     src="assets/firework3.png">
+                <!-- End quay so -->
+
+                <button class="button" id="buttonDefault">
+                    <img class="button-img" src="assets/default.png">
+                    <span class="button-title">QUAY</span>
+                </button>
+                <button class="button-disable hidden-video" id="active-button1">
+                    <img class="button-img" src="assets/default.png">
+                    <span class="button-title">DỪNG</span>
+                </button>
+                <button class="button-disable button-animation hidden-video" id="active-button2">
+                    <img class="button-img" src="assets/active.png">
+                    <span class="button-title">DỪNG</span>
+                </button>
+            </div>
+
+            <!-- Video giải thưởng -->
+            <!-- <video class="fullscreen-video hidden-video" #video1 id="myVideo1" loop playsinline
+                webkit-playsinline>
+                <source src="assets/Trung GIAI DAC BIET.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="fullscreen-video hidden-video" #video2 id="myVideo2" loop playsinline
+                webkit-playsinline>
+                <source src="assets/Trung GIAI NHAT.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="fullscreen-video hidden-video" #video3 id="myVideo3" loop playsinline
+                webkit-playsinline>
+                <source src="assets/Trung GIAI NHI.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video class="fullscreen-video hidden-video" #video4 id="myVideo4" loop playsinline
+                webkit-playsinline>
+                <source src="assets/Trung GIAI BA.mp4">
+                Your browser does not support the video tag.
+            </video> -->
+
+            <video class="fullscreen-video hidden-video" #video5 id="myVideo5" loop playsinline webkit-playsinline autoplay>
+                <source src="http://34.149.251.71/assets/Trung GIAI KHUC KHICH.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="button-hide" id="buttonHide"></div>
+            <video #chucmung class="fullscreen-video hidden-video" id="myVideo6" loop playsinline
+                   webkit-playsinline>
+                <source src="http://34.149.251.71/assets/CHUC MUNG NAM MOI.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="button-prize hidden-video" id="getReward">
+                <div class="button-layout-1-prize"><span class="button-title-prize">Nhận thưởng</span></div>
+                <div class="button-layout-2-prize"></div>
+            </button>
+            <!-- End video giải thưởng-->
+        </div>
+    </div>
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script language="javascript" src="assets/lixi.js"></script>
+
+</html>
